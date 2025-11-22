@@ -3,5 +3,5 @@ from pydantic import BaseModel
 
 
 class SafetyLevelSchema(BaseModel):
-    safety_level: Literal["safe", "borderline", "unsafe"]
+    safety_level: Literal["safe", "uncertain", "unsafe"]
     reason: str
